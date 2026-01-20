@@ -2,14 +2,17 @@ import pandas as pd
 import requests
 import json
 import openai
+import os
+from dotenv import load_dotenv
 
-# --- CONFIGURAÇÕES INICIAIS ---
-# URL base da API do Santander Dev Week 2023
+# Carrega as variáveis do arquivo .env
+load_dotenv()
+
+# --- CONFIGURAÇÕES ---
 sdw2023_api_url = 'https://sdw-2023-prd.up.railway.app'
 
-# TODO: Insira sua chave da OpenAI aqui para testar localmente.
-# IMPORTANTE: Apague a chave antes de enviar para o GitHub (git push) para não vazá-la!
-openai_api_key = 'TODO'
+# AQUI ESTÁ A MÁGICA: O código busca a chave no arquivo oculto
+openai_api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = openai_api_key
 
 # --- 1. EXTRACT (Extração) ---
