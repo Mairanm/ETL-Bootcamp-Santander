@@ -1,4 +1,4 @@
-# 📊 Santander Dev Week 2023 - Pipeline ETL com Python
+# 📊 Bootcamp Santander Análise de Dados com Python - Pipeline ETL com Python
 
 Este projeto é um desafio de **Engenharia de Dados** proposto durante o bootcamp da Santander Análise de dados com Python em parceria com a DIO. O objetivo foi construir um pipeline **ETL (Extract, Transform, Load)** completo para personalizar mensagens de marketing para clientes bancários utilizando **IA Generativa**.
 
